@@ -1,0 +1,18 @@
+How are data structures used?
+Data structures handle four main functions for us:
+
+Inputting information
+Processing information
+Maintaining information
+Retrieving information
+
+
+
+Algorithms
+Simply put, algorithms are instructions that the computer follows to carry out tasks. There are many, many types of algorithms, but some common ones that you will encounter in this course (and likely the world!) are:
+
+Sorting algorithms
+Search algorithms
+Divide and conquer algorithms
+Greedy algorithms
+Brute force algorithms
