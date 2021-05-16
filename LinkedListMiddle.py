@@ -22,3 +22,14 @@ test_list = generate_test_linked_list(7)
 print(test_list.stringify_list())
 middle_node = find_middle(test_list)
 print(middle_node.value)
+
+def find_middle_alt(linked_list):
+  count = 0
+  fast = linked_list.head_node
+  slow = linked_list.head_node
+  while fast:
+    fast = fast.get_next_node()
+    if count % 2 != 0:
+      slow = slow.get_next_node()
+    count += 1
+  return slow
