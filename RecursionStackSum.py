@@ -7,6 +7,10 @@ def sum_to_one(n):
     n -= 1
     print(call_stack)
   print("BASE CASE REACHED")
+  while len(call_stack) > 1:
+      return_value = call_stack.pop()
+      result += return_value["n_value"]
+      print(result)
   return result, call_stack
 
 
