@@ -18,6 +18,8 @@ def depth(tree):
     result += 1
   return result
  
+
+ 
 two_level_tree = {
 "data": 6, 
 "left_child":
