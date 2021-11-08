@@ -62,3 +62,23 @@ test_list = generate_test_linked_list()
 print(test_list.stringify_list())
 nth_last = nth_last_node(test_list, 4)
 print(nth_last.value)
+
+
+
+
+
+
+def nth_last_node(linked_list, n):
+  current = None
+  tail_seeker = linked_list.head_node
+  count = 1
+
+  while tail_seeker:
+    tail_seeker = tail_seeker.get_next_node()
+    counnt += 1
+    if count >= n + 1:
+      if current is None:
+        current = linked_list.head_node
+      else:
+        current = current.get_next_node()
+  return current
