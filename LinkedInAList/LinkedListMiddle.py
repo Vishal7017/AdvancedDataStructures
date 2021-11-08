@@ -33,3 +33,38 @@ def find_middle_alt(linked_list):
       slow = slow.get_next_node()
     count += 1
   return slow
+
+
+
+
+  """
+  from LinkedList import LinkedList
+
+# Complete this function:
+def find_middle(linked_list):
+  first_pointer = linked_list.head_node
+  second_pointer = linked_list.head_node
+  count = 0
+  while first_pointer:
+    if count != 2:
+      first_pointer = first_pointer.get_next_node()
+      count += 1
+    if count == 2:
+      second_pointer = second_pointer.get_next_node()
+      count = 0
+  return second_pointer  
+    
+
+
+def generate_test_linked_list(length):
+  linked_list = LinkedList()
+  for i in range(length, 0, -1):
+    linked_list.insert_beginning(i)
+  return linked_list
+
+# Use this to test your code:
+test_list = generate_test_linked_list(7)
+print(test_list.stringify_list())
+middle_node = find_middle(test_list)
+print(middle_node.value)
+  """
