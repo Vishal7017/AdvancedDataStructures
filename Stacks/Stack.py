@@ -36,6 +36,15 @@ class Stack:
   def is_empty(self):
     return self.size == 0
   
+  def print_items(self):
+    pointer = self.top_item
+    print_list = []
+    while(pointer):
+      print_list.append(pointer.get_value())
+      pointer = pointer.get_next_node()
+    print_list.reverse()
+    print("Stack: {}".format(print_list))
+  
 # Defining an empty pizza stack
 pizza_stack = Stack(6)
 # Adding pizzas as they are ready until we have 
@@ -48,6 +57,8 @@ pizza_stack.push("pizza #6")
 
 # Uncomment the push() statement below:
 pizza_stack.push("pizza #7")
+
+pizza_stack.print_items()
 
 # Delivering pizzas from the top of the stack down
 print("The first pizza to deliver is " + pizza_stack.peek())
