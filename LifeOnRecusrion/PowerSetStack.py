@@ -29,3 +29,4 @@ def power_set2(set):
     return result
 
 print(power_set2(["a","b","c","d","e"]))
+
