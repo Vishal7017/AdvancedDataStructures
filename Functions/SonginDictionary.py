@@ -1,4 +1,4 @@
-def words_often(freqs, minnTimes):
+def words_often(freqs, minTimes):
     result = []
     done = False
     while not done:
@@ -12,3 +12,13 @@ def words_often(freqs, minnTimes):
     return result
 
 print(words_often(beatles, 5))
+
+
+def most_common_words(freqs):
+    values = freqs.values()
+    best = max(values)
+    words = []
+    for k in freqs:
+        if freqs[k] == best:
+            words.append(k)
+    return (words, best)
