@@ -5,10 +5,18 @@ def get_stats(class_list):
     return new_stats
 
 def avg(grades):
-    return sum(grades)/len(grades)
+    """Option 1: Flag the Error by printing a message"""
+    try:
+        return sum(grades)/len(grades)
+    except ZeroDivisionError:
+        print('warning: no grades data')
 
-class_list = [[['peter', 'parker'], [80.0, 70.0, 85.0]],
-             [['bruce',' wayne'], [100.0, 80.0, 74.0]]]
+    # return sum(grades)/len(grades)
+
+class_list = [[['peter', 'parker'], [10.0, 70.0, 85.0]],
+             [['bruce',' wayne'], [10.0, 80.0, 74.0]],
+             [['caption','america'], [80.0, 10.0, 96.0]],
+             [['deadpool'], []]]
 
         
 print(get_stats(class_list))
