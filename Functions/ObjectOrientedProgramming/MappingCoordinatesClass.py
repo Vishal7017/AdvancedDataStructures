@@ -10,5 +10,10 @@ class Coordinate(object):
 c = Coordinate(3,4)
 zero = Coordinate(0, 0)
 """Using the class
-   conventional way"""
-print(c.distance(zero))
+   conventional way call by object"""
+# print(c.distance(zero))
+
+"""Using the class
+   equivalent to call by name of class"""
+
+print(Coordinate.distance(c, zero))
