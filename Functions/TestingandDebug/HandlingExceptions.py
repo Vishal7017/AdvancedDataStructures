@@ -14,11 +14,15 @@ def avg(grades):
     # return sum(grades)/len(grades)
 
     """Option 2: Change the Policy"""
-    try:
-        return sum(grades)/len(grades)
-    except ZeroDivisionError:
-        print('warning: no grades data')
-        return 0.0
+    # try:
+    #     return sum(grades)/len(grades)
+    # except ZeroDivisionError:
+    #     print('warning: no grades data')
+    #     return 0.0
+
+    """Option 3: AssertionError"""
+    assert not len(grades) == 0, 'no grades data'
+    return sum(grades)/len(grades)
 
 class_list = [[['peter', 'parker'], [10.0, 70.0, 85.0]],
              [['bruce',' wayne'], [10.0, 80.0, 74.0]],
