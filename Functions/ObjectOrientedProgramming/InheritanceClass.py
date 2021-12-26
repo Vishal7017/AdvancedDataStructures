@@ -81,12 +81,54 @@ class Student(Person):
 
 
 
-print("\n------ student tests ------")
-s1 = Student('alice', 20, "CS")
-s2 = Student('beth', 18)
-print(s1)
-print(s2)
-print(s1.get_name(), "says:", end= " ")
-s1.speak()
-print(s2.get_name()," says:", end= " ")
-s2.speak()
+# print("\n------ student tests ------")
+# s1 = Student('alice', 20, "CS")
+# s2 = Student('beth', 18)
+# print(s1)
+# print(s2)
+# print(s1.get_name(), "says:", end= " ")
+# s1.speak()
+# print(s2.get_name()," says:", end= " ")
+# s2.speak()
+
+""" Rabbit Getter Methods"""
+
+class Rabbit(Animal):
+    tag = 1
+    def __init__(self, age, parent1=None, parent2=None):
+        Animal.__init__(self, age)
+        self.parent1 = parent1
+        self.parent2 = parent2
+        self.rid = Rabbit.tag
+        Rabbit.tag += 1
+    
+    def get_rid(self):
+        return str(self.rid).zfill(3)
+
+    def get_parent1(self):
+        return self.parent1
+    
+    def get_parent2(self):
+        return self.parent2
+
+    def __add__(self, other):
+        # returning object of same type as this class
+        return Rabbit(0, self, other)
+    
+    def __eq__(self, other):
+        parents_same = self.parent1.rid == other.parent1.rid and self.paren2.rid == other.parent2.rid
+        parents_opposite = self.parent2.rid == other.parent1.rid and self.parent1.rid == other.parent2.rid
+        return parents_same or parents_opposite
+
+    
+print("\n---- rabbit tests ------")
+print("------ testing creating rabbits ------")
+r1 = Rabbit(3)
+r2 = Rabbit(4)
+r3 = Rabbit(5)
+
+print("r1:", r1)
+print("r2:", r2)
+print("r3:", r3)
+print("r1 parent1:", r1.get_parent1())
+print("r1 parent2:", r1.get_parent2())
