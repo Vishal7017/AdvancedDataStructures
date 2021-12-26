@@ -6,6 +6,10 @@ class Coordinate(object):
         x_diff_sq = (self.x-other.x)**2
         y_diff_sq = (self.y-other.y)**2
         return (x_diff_sq + y_diff_sq)**0.5
+
+    def __str__(self):
+        #Represetation of an object
+        return "<"+str(self.x) + ","+ str(self.y)+">"
     
 c = Coordinate(3,4)
 zero = Coordinate(0, 0)
@@ -17,3 +21,9 @@ zero = Coordinate(0, 0)
    equivalent to call by name of class"""
 
 print(Coordinate.distance(c, zero))
+
+"""Print representation of an object"""
+print(c)
+print(type(c))
+print(type(Coordinate))
+print(isinstance(c, Coordinate))
