@@ -11,6 +11,7 @@ class Coordinate(object):
         #Represetation of an object
         return "<"+str(self.x) + ","+ str(self.y)+">"
     
+    
 c = Coordinate(3,4)
 zero = Coordinate(0, 0)
 """Using the class
@@ -27,3 +28,10 @@ print(c)
 print(type(c))
 print(type(Coordinate))
 print(isinstance(c, Coordinate))
+
+# print(c.__add__(zero))
+# print(c.__sub__(zero))
+# print(c.__eq__(zero))
+# print(c.__lt__(zero))
+# print(c.__len__(c))
+
