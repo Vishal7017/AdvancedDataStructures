@@ -11,11 +11,12 @@ def get_ratios(L1, L2):
             raise ValueError('get_ratios called with bad arg')
     return ratios
 
-L1 = [4, 16, 32, 64, 128]
-L2 = [3, 0, 12, 32, 12]
-print(get_ratios(L1, L2))
+#ZeroDivisionError
+# L1 = [4, 16, 32, 64, 128]
+# L2 = [3, 0, 12, 32, 12]
+# print(get_ratios(L1, L2))
 
-
-# L3 = [4, 16, 32, 64, 128]
-# L4 = [3, 0, 12, "3", 12]
-# print(get_ratios(L3, L4))
+#ValueError
+L3 = [4, 16, 32, 64, 128]
+L4 = [3, 0, 12, "3", 12]
+print(get_ratios(L3, L4))
