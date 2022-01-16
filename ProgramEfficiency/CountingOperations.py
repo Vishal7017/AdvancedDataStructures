@@ -6,3 +6,4 @@ def mysum(x):
     for i in range(x+1):
         total += i
     return total
+
