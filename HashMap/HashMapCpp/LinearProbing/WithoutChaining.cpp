@@ -1,5 +1,5 @@
 /* Hashing */
-/* Program Details - Hashing , hanndle collision usinnng linear probing without chaining */
+/* Program Details - Hashing , hanndle collision usinnng linear probing with chaining */
 #include <iostream>
 using namespace std;
 #define SIZE 10 /* size of the hash table */
