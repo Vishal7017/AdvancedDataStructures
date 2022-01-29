@@ -29,7 +29,7 @@ int main()
         cin>>op;
         switch(op)
         {
-            case 1: cout<<"\nEnter a numberChainingwithoutReplacement to be inserted:";
+            case 1: cout<<"\nEnter a number to be inserted:";
                     cin >> x;
                     insert(data,flag,chain,x);
                     break;
