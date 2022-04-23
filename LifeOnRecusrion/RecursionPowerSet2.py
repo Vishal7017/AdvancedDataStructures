@@ -8,3 +8,4 @@ def power_set(my_list):
 print(power_set(['a', 'b', 'c']))
 
 
+#Fibonacci runtime is O(2^N)
