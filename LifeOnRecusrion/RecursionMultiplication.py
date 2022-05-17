@@ -4,8 +4,7 @@ def multiplication(num_a, num_b):
 
   return num_a + multiplication(num_a, num_b - 1)
 
-
-# test cases
+ test cases
 print(multiplication(3, 7) == 21)
 print(multiplication(5, 5) == 25)
 print(multiplication(0, 4) == 0)
