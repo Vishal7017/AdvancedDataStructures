@@ -1,5 +1,5 @@
 L = ["life", "answer", 42, 0]
-
+coun
 for thing in L:
     if thing==0:
         L[thing] = "universe"
